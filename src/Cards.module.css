@@ -16,3 +16,15 @@
   width: 150px;
   object-fit: contain;
 }
+
+.card > i {
+  color: yellow;
+}
+
+.star-maroon {
+  color: maroon !important;
+}
+
+.star-pink {
+  color: pink !important;
+}
