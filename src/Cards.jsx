@@ -38,7 +38,7 @@ const data = [
 const Card = ({ name, image, role, ...restProps }) => {
   const handleClick = (e) => {
     console.log(e);
-    console.log("Clicking");
+    alert(`Clicking ${name}`);
   };
   return (
     <div className={styles.card}>
@@ -68,11 +68,11 @@ const Cards = (props) => {
   return (
     // inline styling
     <div
-      style={{
-        margin: 16,
-        // margin: "16px"
-      }}
-      className={styles.container}
+      // className={styles.container}
+      // className={styles["margin-container"]}
+      // className={styles.marginContainer}
+      // className="marginContainer container"
+      className={`${styles.marginContainer} ${styles.container}`}
     >
       <h1>{props.title}</h1>
       <h2>Date: {props.date}</h2>
@@ -107,13 +107,21 @@ const Cards = (props) => {
         />,
       ]} */}
 
-      {data.map((cardData) => (
+      {/* {data.map((cardData) => (
         <Card
           // Do not use index as key
           key={cardData.name}
           name={cardData.name}
           image={cardData.image}
           role={cardData.role}
+        />
+      ))} */}
+
+      {data.map((cardData) => (
+        <Card
+          // Do not use index as key
+          key={cardData.name}
+          {...cardData}
         />
       ))}
       <div>{props.children}</div>

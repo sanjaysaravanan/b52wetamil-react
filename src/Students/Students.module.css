@@ -1,0 +1,39 @@
+.students-root {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 16px;
+}
+
+.student-root {
+  margin: 16px;
+  border: 1px solid;
+  padding: 16px;
+  width: 300px;
+  height: 200px;
+  min-width: 300px;
+}
+
+.student-root > h3 i {
+  color: yellow;
+}
+
+.pink-heart {
+  color: rgb(253, 0, 42) !important;
+}
+
+
+.liked-count {
+  border: 2px solid;
+  padding: 8px;
+  margin: 8px;
+  float: right;
+}
+
+.liked-count:hover {
+  color: white;
+  background-color: black;
+}
+
+.liked-count > i {
+  color: rgb(253, 0, 42) !important;
+}

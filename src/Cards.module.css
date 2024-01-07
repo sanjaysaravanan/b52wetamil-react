@@ -4,6 +4,14 @@
   background-color: blue;
 }
 
+.margin-container {
+  margin: 16px;
+}
+
+.marginContainer {
+  margin: 16px;
+}
+
 .card {
   border: 1px solid;
   border-radius: 15px;
