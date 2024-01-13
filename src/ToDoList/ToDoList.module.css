@@ -1,0 +1,20 @@
+.root {
+  margin: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.root > input {
+  padding: 4px;
+  margin: 8px;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo > span {
+  margin-left: 16px;
+}
