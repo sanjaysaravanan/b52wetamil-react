@@ -18,12 +18,16 @@ Todo.propTypes = {
   deleteTodo: PropTypes.func,
 };
 
+// Todo
+// title: string
+// isCompleted: boolean
+
 const ToDoList = ({ initialTodos = [] }) => {
   // state variable used to handle the text in the input field
-  const [inpText, setInpText] = useState(initialTodos);
+  const [inpText, setInpText] = useState("");
 
   // state variable used to store the todos created by the user
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(initialTodos);
 
   const handleInpChange = (e) => {
     console.log(e.target.value);
