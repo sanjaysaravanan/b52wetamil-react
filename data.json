@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "class": "10A",
+    "image": "https://example.com/john_doe_student.jpg",
+    "type": "student"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "class": "11B",
+    "image": "https://example.com/jane_smith_student.jpg",
+    "type": "student"
+  },
+  {
+    "id": 3,
+    "name": "Bob Johnson",
+    "class": "9C",
+    "image": "https://example.com/bob_johnson_student.jpg",
+    "type": "student"
+  },
+  {
+    "id": 4,
+    "name": "Alice Williams",
+    "class": "12D",
+    "image": "https://example.com/alice_williams_student.jpg",
+    "type": "student"
+  },
+  {
+    "id": 5,
+    "name": "Professor Smith",
+    "class": "Mathematics",
+    "image": "https://example.com/professor_smith.jpg",
+    "type": "teacher"
+  },
+  {
+    "id": 6,
+    "name": "Dr. Johnson",
+    "class": "Physics",
+    "image": "https://example.com/dr_johnson.jpg",
+    "type": "teacher"
+  }
+]
