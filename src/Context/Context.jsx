@@ -4,11 +4,12 @@ import CountContext from "../CountContext";
 
 const ChildC = () => {
   // consume the context
-  const count = useContext(CountContext);
+  const { count, handleInc } = useContext(CountContext);
 
   return (
     <>
       <h1>Child C</h1>
+      <button onClick={handleInc}>Inc</button>
       {console.log("C Rendering")}
       <h1>{count}</h1>
     </>
@@ -43,10 +44,9 @@ const ParentComp = () => {
   };
 
   return (
-    <CountContext.Provider value={count}>
+    <CountContext.Provider value={{ count, handleInc }}>
       <div>
         <h1>Parent A</h1>
-        <button onClick={handleInc}>Inc</button>
         <ChildA />
       </div>
     </CountContext.Provider>

@@ -19,6 +19,9 @@ import Parent from "./Props-Drilling/Drilling";
 import ParentComp from "./Context/Context";
 import ThemeContext from "./ThemeContext";
 import { useContext, useState } from "react";
+import FormHandling from "./Form-Handling/FormHandling";
+import Reference from "./Reference/Reference";
+import Reducer from "./Reducer/Reducer";
 
 const Layout = () => {
   const theme = useContext(ThemeContext);
@@ -74,6 +77,7 @@ const Layout = () => {
           color: theme === "light" ? "#000" : "#fff",
           backgroundColor: theme === "light" ? "#f5ebeb" : "#000",
           height: "calc(100vh - 75px)",
+          width: "calc(100vw - 232px)",
         }}
       >
         <Outlet />
@@ -192,6 +196,9 @@ const AppRoutes = () => {
               <Route path="counter" element={<Counter />} />
               <Route path="props-drilling" element={<Parent />} />
               <Route path="context-hook" element={<ParentComp />} />
+              <Route path="form-handling" element={<FormHandling />} />
+              <Route path="reference" element={<Reference />} />
+              <Route path="reducer" element={<Reducer />} />
             </Route>
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />

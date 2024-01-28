@@ -1,0 +1,45 @@
+.game-container {
+  height: 300px;
+  width: 300px;
+  border: 1px solid;
+  position: relative;
+}
+
+.box {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+
+.arrows {
+  height: 150px;
+  width: 150px;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+}
+
+.arrow-left {
+  top: 50%;
+  left: 0;
+}
+
+.arrow-right {
+  top: 50%;
+  right: 0;
+}
+
+.arrow-top {
+  left: 34%;
+  top: 0;
+}
+
+.arrow-bottom {
+  left: 35%;
+  bottom: 0;
+}
+
